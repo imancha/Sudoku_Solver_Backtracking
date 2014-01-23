@@ -1,7 +1,12 @@
 #include <iostream>
 
+<<<<<<< HEAD
 /*        Start of Check Sudoku Questions        */
 //        cek nomor pada baris yang sudah diisi
+=======
+/*	Start of Check Sudoku Questions	*/
+//	cek nomor pada baris yang sudah diisi
+>>>>>>> c4af9ab9e53c58b8f00585df9d1557a586033c37
 bool checkRow(int grid[][9], int row, int col, int num){
         for(int kolom=col+1; kolom<9; kolom++){
                 if(grid[row][kolom] == num){
@@ -12,7 +17,11 @@ bool checkRow(int grid[][9], int row, int col, int num){
         }
 }
 
+<<<<<<< HEAD
 //        cek nomor pada kolom yang sudah diisi
+=======
+//	cek nomor pada kolom yang sudah diisi
+>>>>>>> c4af9ab9e53c58b8f00585df9d1557a586033c37
 bool checkCol(int grid[][9], int row, int col, int num){
         for(int baris=row+1; baris<9; baris++){
                 if(grid[baris][col] == num){
@@ -23,7 +32,11 @@ bool checkCol(int grid[][9], int row, int col, int num){
         }
 }
 
+<<<<<<< HEAD
 //        cek nomor pada box yang sudah diisi
+=======
+//	cek nomor pada box yang sudah diisi
+>>>>>>> c4af9ab9e53c58b8f00585df9d1557a586033c37
 bool checkBox(int grid[][9], int boxRow, int boxCol, int row, int col, int num){
         for(int baris=0; baris<3; baris++){
                 for(int kolom=0; kolom<3; kolom++){
@@ -36,7 +49,11 @@ bool checkBox(int grid[][9], int boxRow, int boxCol, int row, int col, int num){
         }
 }
 
+<<<<<<< HEAD
 //        return true bila nomor telah digunakan pada baris / kolom / box
+=======
+//	return true bila nomor telah digunakan pada baris / kolom / box
+>>>>>>> c4af9ab9e53c58b8f00585df9d1557a586033c37
 bool isSame(int grid[][9], int row, int col, int num){
         return         checkRow(grid,row,col,num) ||
                         checkCol(grid,row,col,num) ||
